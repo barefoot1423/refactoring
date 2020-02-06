@@ -22,7 +22,7 @@ public class Rental {
     }
 
     double getCharge() {
-        return movie.getCharge(daysRented);
+        return movie.price.getCharge(daysRented, movie);
     }
 
 }
