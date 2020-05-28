@@ -15,7 +15,7 @@ public class Account {
     }
 
     double interestForAmount_days(double amount, int days) {
-        return interestRate * amount * days / 365;
+        return type.getInterestRate() * amount * days / 365;
     }
 
 }
