@@ -2,8 +2,8 @@ package ch7;
 
 public class Person {
     private String name;
-    private String officeAreaCode;
-    private String officeNumber;
+
+    private TelephoneNumber officeTelephone = new TelephoneNumber();
 
     public String getName() {
         return name;
@@ -14,19 +14,11 @@ public class Person {
     }
 
     public String getOfficeAreaCode() {
-        return officeAreaCode;
+        return officeTelephone.getAreaCode();
     }
 
     public void setOfficeAreaCode(String officeAreaCode) {
-        this.officeAreaCode = officeAreaCode;
-    }
-
-    public String getOfficeNumber() {
-        return "(" + officeAreaCode + ") " + officeNumber;
-    }
-
-    public void setOfficeNumber(String officeNumber) {
-        this.officeNumber = officeNumber;
+        officeTelephone.setAreaCode(officeAreaCode);
     }
 
 }
