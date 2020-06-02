@@ -5,5 +5,6 @@ public class Main {
         Person john = new Person();
 
         john.getDepartment().getManager();
+        john.department.getManager();
     }
 }
