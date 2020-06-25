@@ -5,7 +5,7 @@ public class Order {
     private Customer customer;
 
     public Order(String customerName) {
-        customer = new Customer(customerName);
+        customer = Customer.create(customerName);
     }
 
     public String getCustomerName() {
